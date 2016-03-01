@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">手机流量监控系统</string>
+    <string name="traffic">流量监控</string>
+    <string name="network">联网监控</string>
+    <string name="graph">流量统计</string>
+    <string name="dataset">参数设置</string>
+    <string name="help">帮助文档</string>
+    <string name="mobile">2/3g流量</string>
+    <string name="wifi">WIFI流量</string>
+    <string name="receive">接收</string>
+    <string name="transfer">发送</string>
+    <string name="now">当前</string>
+    <string name="hour">当前小时</string>
+    <string name="day">今日</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

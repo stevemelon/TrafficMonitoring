@@ -1,0 +1,313 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fanghao.example.com.trafficmonitoring.TrafficFragment">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/traffic"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/mobileL"
+                android:layout_width="10dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mobileL"
+                android:layout_toRightOf="@id/mobileL"
+                android:paddingTop="3dp"
+                android:text="@string/mobile"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80CCCCCC"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView android:layout_margin="2dp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="本月"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#282828" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="发送："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/mobile_transfer"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/mobile_transfer_today"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#282828" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="接收："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/mobile_receive"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/mobile_receive_today"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="当前发送:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mobile_transfer_current"
+                android:layout_width="80dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="当前接收:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mobile_receive_current"
+                android:layout_width="80dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/mobileL2"
+                android:layout_width="10dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/mobileL2"
+                android:layout_toRightOf="@id/mobileL2"
+                android:paddingTop="3dp"
+                android:text="@string/wifi"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80CCCCCC"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView android:layout_margin="2dp" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="本月"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="今日"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#282828" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="发送："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/wifi_transfer"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/wifi_transfer_today"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <View
+                android:layout_height="1dp"
+                android:background="#282828" />
+
+            <TableRow>
+
+                <TextView
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="接收："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/wifi_receive"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/wifi_receive_today"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:textColor="#fff" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="当前发送:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/wifi_transfer_current"
+                android:layout_width="80dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:text="当前接收:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/wifi_receive_current"
+                android:layout_width="80dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+        <!--<Button
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始流量监控"/>
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结束流量监控"/>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="监控状态" />
+
+            <Switch
+                android:id="@+id/swither"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

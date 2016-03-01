@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fanghao.example.com.trafficmonitoring.TrafficListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="时间:"/>
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/editDate"/>
+            <Button
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/query"
+                android:text="选择日期"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TableRow >
+                <TextView
+                    android:text="小时"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:text="2g接收"
+                    android:layout_weight="1"/>/>
+
+                <TextView
+                    android:text="2g发送"
+                    android:layout_weight="1"/>/>
+                <TextView
+                    android:text="wifi接收"
+                    android:layout_weight="1"/>/>
+                <TextView
+                    android:text="wifi发送"
+                    android:layout_weight="1"/>/>
+            </TableRow>
+            <ListView
+                android:id="@+id/trafficlist">
+
+            </ListView>
+        </TableLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
